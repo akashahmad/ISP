@@ -44,13 +44,15 @@ body {
 
     @media only screen and(max-width: 1100px) {
       row-gap: 50px;
-      flex-wrap: wrap;
+      
     }
 
-    @media only screen and(max-width: 640px) {
+    @media only screen and(max-width: 600px) {
       justify-content: center;
       row-gap: 40px;
       column-gap: 50px;
+      flex-direction: column;
+      align-items: center;
     }
 
     .main-highlight {
@@ -63,7 +65,7 @@ body {
       color: #4d4d4d;
       opacity: 0.9;
 
-      @media only screen and(max-width: 640px) {
+      @media only screen and(max-width: 600px) {
         position: relative;
         order: -2;
       }
@@ -74,9 +76,12 @@ body {
         text-align: center;
         letter-spacing: 2px;
 
-        @media only screen and(max-width: 640px) {
+        @media only screen and(max-width: 650px) {
+          font-size: 24px;
+        }
+        @media only screen and(max-width: 600px) {
           margin-bottom: 6px;
-          font-size: 16px;
+          font-size: 24px;
           line-height: 1.5;
         }
       }
@@ -85,10 +90,12 @@ body {
         font-size: 32px;
         text-align: center;
         letter-spacing: 2px;
-
-        @media only screen and(max-width: 640px) {
+        @media only screen and(max-width: 650px) {
+          font-size: 24px;
+        }
+        @media only screen and(max-width: 600px) {
           margin-bottom: 20px;
-          font-size: 16px;
+          font-size: 24px;
         }
       }
     }
@@ -96,9 +103,10 @@ body {
     .card-outer {
       padding: 35px 12px;
       transition: 0.1s linear;
-      @media only screen and(max-width: 640px) {
-        border: 1px solid;
+      width: 32%;
+      @media only screen and(max-width: 600px) {
         border-radius: 40px;
+        width: auto;
       }
     }
     .activeBorder {
@@ -117,7 +125,7 @@ body {
         height: 36px;
         margin-top: -4px;
       }
-      @media only screen and(max-width: 640px) {
+      @media only screen and(max-width: 600px) {
         order: -1;
       }
     }
@@ -178,7 +186,7 @@ body {
     .card-pic {
       margin: 100px 0 38px;
 
-      @media only screen and(max-width: 640px) {
+      @media only screen and(max-width: 600px) {
         margin: 30px 0;
       }
 
@@ -217,7 +225,7 @@ body {
       @media only screen and(max-width: 1360px) {
         margin-top: 80px;
       }
-      @media only screen and(max-width: 640px) {
+      @media only screen and(max-width: 600px) {
         margin-top: 30px;
       }
     }
