@@ -1,0 +1,240 @@
+$color-white: #fff;
+$color-dark: #000;
+$color-body: #616161;
+
+@mixin displayCenter($justify-content) {
+  display: flex;
+  justify-content: $justify-content;
+  align-items: center;
+}
+@font-face {
+  font-family: rebuchet-Italic;
+  src: url("../fonts/trebuchet-ms-Italic.ttf");
+}
+@font-face {
+  font-family: trebuchet;
+  src: url("../fonts/trebuc.ttf");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $color-body;
+  font-family: trebuchet;
+}
+
+.main-section {
+  .main-container {
+    min-height: 100vh;
+    background-color: $color-white;
+    width: 610px;
+    max-width: 90%;
+    padding: 25px 12px;
+    margin: 0 auto;
+    position: relative;
+  }
+  .card-container {
+    @include displayCenter(space-between);
+    text-align: center;
+    align-items: flex-start;
+    position: relative;
+
+    @media only screen and(max-width: 1100px) {
+      row-gap: 50px;
+      flex-wrap: wrap;
+    }
+
+    @media only screen and(max-width: 640px) {
+      justify-content: center;
+      row-gap: 40px;
+      column-gap: 50px;
+    }
+
+    .main-highlight {
+      position: absolute;
+      top: 36%;
+      left: 0;
+      right: 0;
+      pointer-events: none;
+      z-index: 99;
+      color: #4d4d4d;
+      opacity: 0.9;
+
+      @media only screen and(max-width: 640px) {
+        position: relative;
+        order: -2;
+      }
+
+      h3 {
+        font-size: 32px;
+        margin-bottom: 70px;
+        text-align: center;
+        letter-spacing: 2px;
+
+        @media only screen and(max-width: 640px) {
+          margin-bottom: 6px;
+          font-size: 16px;
+          line-height: 1.5;
+        }
+      }
+
+      h4 {
+        font-size: 32px;
+        text-align: center;
+        letter-spacing: 2px;
+
+        @media only screen and(max-width: 640px) {
+          margin-bottom: 20px;
+          font-size: 16px;
+        }
+      }
+    }
+
+    .card-outer {
+      padding: 35px 12px;
+      transition: 0.1s linear;
+      @media only screen and(max-width: 640px) {
+        border: 1px solid;
+        border-radius: 40px;
+      }
+    }
+    .activeBorder {
+      border: 1px solid;
+      border-radius: 40px;
+
+      .card-inner {
+        height: 170px;
+        margin-top: -10px;
+      }
+      .mb-section {
+        font-size: 26px;
+        letter-spacing: 1px;
+      }
+      .card-btn {
+        height: 36px;
+        margin-top: -4px;
+      }
+      @media only screen and(max-width: 640px) {
+        order: -1;
+      }
+    }
+
+    .card-inner {
+      padding: 28px 0px;
+      border-radius: 1rem;
+      position: relative;
+      text-align: center;
+      h2 {
+        font-size: 18px;
+      }
+      .popular-tag {
+        position: absolute;
+        top: -14px;
+        left: 0;
+        right: 0;
+        width: 73%;
+        margin: 0 auto;
+        border: 2px solid;
+        border-radius: 4px;
+        p {
+          padding: 7px 0px;
+          text-transform: uppercase;
+          font-size: 12px;
+          font-weight: 600;
+          width: 100%;
+        }
+        p {
+          background-color: $color-white;
+        }
+      }
+
+      .card-price {
+        @include displayCenter(center);
+        position: relative;
+        padding-top: 8px;
+
+        span {
+          position: absolute;
+          left: 45px;
+          top: 10px;
+          font-size: 19px;
+        }
+        h1 {
+          font-size: 34px;
+          font-weight: bold;
+        }
+      }
+      p {
+        width: 98%;
+        margin: 0 auto;
+        line-height: 14px;
+        padding-top: 8px;
+      }
+    }
+
+    .card-pic {
+      margin: 100px 0 38px;
+
+      @media only screen and(max-width: 640px) {
+        margin: 30px 0;
+      }
+
+      img {
+        width: 80px;
+        height: 60px;
+      }
+
+      &_caption {
+        margin-top: 10px;
+        font-family: rebuchet-Italic !important;
+        opacity: 0.6;
+        font-weight: 500;
+      }
+    }
+
+    .card-btn {
+      border-radius: 50px;
+      padding: 8px 24px;
+      border: none;
+      outline: none;
+      font-weight: bold;
+      font-size: 15px;
+      cursor: pointer;
+
+      &:hover {
+        box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.3);
+      }
+    }
+
+    .mb-section {
+      font-size: 24px;
+      margin-top: 80px;
+      font-weight: 600;
+
+      @media only screen and(max-width: 1360px) {
+        margin-top: 80px;
+      }
+      @media only screen and(max-width: 640px) {
+        margin-top: 30px;
+      }
+    }
+  }
+
+  .terms-link {
+    color: #1603f2;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 25px;
+    font-weight: 700;
+    @media only screen and(max-width: 414px) {
+      margin-top: 60px;
+      font-size: 16px;
+    }
+    @media only screen and(max-width: 1100px) {
+      margin-top: 50px;
+    }
+  }
+}
