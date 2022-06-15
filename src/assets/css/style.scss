@@ -7,14 +7,17 @@ $color-body: #616161;
   justify-content: $justify-content;
   align-items: center;
 }
+
 @font-face {
   font-family: rebuchet-Italic;
   src: url("../fonts/trebuchet-ms-Italic.ttf");
 }
+
 @font-face {
   font-family: trebuchet;
   src: url("../fonts/trebuc.ttf");
 }
+
 * {
   margin: 0;
   padding: 0;
@@ -35,6 +38,10 @@ body {
     padding: 25px 12px;
     margin: 0 auto;
     position: relative;
+
+    @media only screen and(max-width: 414px) {
+      padding: 25px 2%;
+    }
   }
   .card-container {
     @include displayCenter(space-between);
@@ -44,16 +51,15 @@ body {
 
     @media only screen and(max-width: 1100px) {
       row-gap: 50px;
-      
     }
 
-    @media only screen and(max-width: 600px) {
-      justify-content: center;
-      row-gap: 40px;
-      column-gap: 50px;
-      flex-direction: column;
-      align-items: center;
-    }
+    // @media only screen and(max-width: 600px) {
+    //   justify-content: center;
+    //   row-gap: 40px;
+    //   column-gap: 50px;
+    //   flex-direction: column;
+    //   align-items: center;
+    // }
 
     .main-highlight {
       position: absolute;
@@ -65,10 +71,14 @@ body {
       color: #4d4d4d;
       opacity: 0.9;
 
-      @media only screen and(max-width: 600px) {
-        position: relative;
-        order: -2;
+      @media only screen and(max-width: 414px) {
+        top: 40%;
       }
+
+      // @media only screen and(max-width: 600px) {
+      //   position: relative;
+      //   order: -2;
+      // }
 
       h3 {
         font-size: 32px;
@@ -79,10 +89,19 @@ body {
         @media only screen and(max-width: 650px) {
           font-size: 24px;
         }
-        @media only screen and(max-width: 600px) {
-          margin-bottom: 6px;
-          font-size: 24px;
-          line-height: 1.5;
+
+        // @media only screen and(max-width: 600px) {
+        //   margin-bottom: 6px;
+        //   font-size: 24px;
+        //   line-height: 1.5;
+        // }
+
+        @media only screen and(max-width: 414px) {
+          font-size: 18px;
+        }
+
+        @media only screen and(max-width: 394px) {
+          font-size: 15px;
         }
       }
 
@@ -93,9 +112,17 @@ body {
         @media only screen and(max-width: 650px) {
           font-size: 24px;
         }
-        @media only screen and(max-width: 600px) {
-          margin-bottom: 20px;
-          font-size: 24px;
+        // @media only screen and(max-width: 600px) {
+        //   margin-bottom: 20px;
+        //   font-size: 24px;
+        // }
+
+        @media only screen and(max-width: 414px) {
+          font-size: 18px;
+        }
+
+        @media only screen and(max-width: 394px) {
+          font-size: 15px;
         }
       }
     }
@@ -104,30 +131,51 @@ body {
       padding: 35px 12px;
       transition: 0.1s linear;
       width: 32%;
-      @media only screen and(max-width: 600px) {
-        border-radius: 40px;
-        width: auto;
+      // @media only screen and(max-width: 600px) {
+      //   border-radius: 40px;
+      //   width: auto;
+      // }
+
+      @media only screen and(max-width: 414px) {
+        padding: 28px 1%;
       }
     }
     .activeBorder {
       border: 1px solid;
       border-radius: 40px;
 
+      @media only screen and(max-width: 414px) {
+        border-radius: 25px;
+      }
+
       .card-inner {
         height: 170px;
         margin-top: -10px;
+
+        @media only screen and(max-width: 414px) {
+          height: auto;
+          margin-top: 0;
+        }
       }
       .mb-section {
         font-size: 26px;
         letter-spacing: 1px;
+
+        @media only screen and(max-width: 414px) {
+          font-size: 18px;
+        }
       }
       .card-btn {
         height: 36px;
         margin-top: -4px;
+
+        @media only screen and(max-width: 394px) {
+          font-size: 12px;
+        }
       }
-      @media only screen and(max-width: 600px) {
-        order: -1;
-      }
+      // @media only screen and(max-width: 600px) {
+      //   order: -1;
+      // }
     }
 
     .card-inner {
@@ -135,6 +183,7 @@ body {
       border-radius: 1rem;
       position: relative;
       text-align: center;
+
       h2 {
         font-size: 18px;
       }
@@ -147,12 +196,21 @@ body {
         margin: 0 auto;
         border: 2px solid;
         border-radius: 4px;
+
+        // @media only screen and(max-width: 414px) {
+        //   top: -20px;
+        // }
+
         p {
-          padding: 7px 0px;
+          padding: 7px 2px;
           text-transform: uppercase;
-          font-size: 12px;
+          font-size: 11px;
           font-weight: 600;
           width: 100%;
+
+          @media only screen and(max-width: 414px) {
+            font-size: 8px;
+          }
         }
         p {
           background-color: $color-white;
@@ -166,13 +224,17 @@ body {
 
         span {
           position: absolute;
-          left: 45px;
-          top: 10px;
+          left: 28%;
+          top: 20%;
           font-size: 19px;
         }
         h1 {
           font-size: 34px;
           font-weight: bold;
+
+          @media only screen and(max-width: 414px) {
+            font-size: 20px;
+          }
         }
       }
       p {
@@ -186,13 +248,22 @@ body {
     .card-pic {
       margin: 100px 0 38px;
 
-      @media only screen and(max-width: 600px) {
-        margin: 30px 0;
+      // @media only screen and(max-width: 600px) {
+      //   margin: 30px 0;
+      // }
+
+      @media only screen and(max-width: 414px) {
+        margin: 80px 0 38px;
       }
 
       img {
         width: 80px;
         height: 60px;
+
+        @media only screen and(max-width: 414px) {
+          width: 50px;
+          height: 40px;
+        }
       }
 
       &_caption {
@@ -200,6 +271,14 @@ body {
         font-family: rebuchet-Italic !important;
         opacity: 0.6;
         font-weight: 500;
+
+        @media only screen and(max-width: 414px) {
+          font-size: 13px;
+        }
+
+        @media only screen and(max-width: 390px) {
+          font-size: 12px;
+        }
       }
     }
 
@@ -215,6 +294,10 @@ body {
       &:hover {
         box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.3);
       }
+
+      @media only screen and(max-width: 394px) {
+        font-size: 12px;
+      }
     }
 
     .mb-section {
@@ -225,9 +308,13 @@ body {
       @media only screen and(max-width: 1360px) {
         margin-top: 80px;
       }
-      @media only screen and(max-width: 600px) {
-        margin-top: 30px;
+
+      @media only screen and(max-width: 414px) {
+        font-size: 18px;
       }
+      // @media only screen and(max-width: 600px) {
+      //   margin-top: 30px;
+      // }
     }
   }
 
@@ -237,10 +324,10 @@ body {
     text-align: center;
     margin-top: 25px;
     font-weight: 700;
-    @media only screen and(max-width: 414px) {
-      margin-top: 60px;
-      font-size: 16px;
-    }
+    // @media only screen and(max-width: 414px) {
+    //   margin-top: 60px;
+    //   font-size: 16px;
+    // }
     @media only screen and(max-width: 1100px) {
       margin-top: 50px;
     }
