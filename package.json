@@ -1,9 +1,9 @@
 {
-  "name": "internet-deals",
+  "name": "ISP",
   "version": "1.0.0",
   "private": true,
-  "description": "internet-deals",
-  "author": "akashahmad",
+  "description": "Internet Services Provider Web App",
+  "author": "Akash",
   "keywords": [
     "gatsby"
   ],
