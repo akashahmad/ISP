@@ -77,16 +77,22 @@ body {
         top: 35%;
       }
       @media only screen and(max-width: 393px) {
-        top: 39%;
+        top: 37%;
+      }
+      @media only screen and(max-width: 384px) {
+        top: 36%;
       }
       @media only screen and(max-width: 375px) {
-        top: 38%;
+        top: 36%;
       }
       @media only screen and(max-width: 320px) {
-        top: 39%;
+        top: 37%;
       }
       @media only screen and(max-width: 280px) {
         top: 37%;
+      }
+      @media only screen and(max-width: 240px) {
+        top: 38%;
       }
 
       h3 {
