@@ -39,7 +39,7 @@ body {
     margin: 0 auto;
     position: relative;
 
-    @media only screen and(max-width: 414px) {
+    @media only screen and(max-width: 480px) {
       padding: 25px 2%;
     }
   }
@@ -71,13 +71,24 @@ body {
       color: #4d4d4d;
       opacity: 0.9;
 
-      @media only screen and(max-width: 414px) {
-        top: 40%;
+      @media only screen and(max-width: 600px) {
+        top: 37%;
       }
 
-      // @media only screen and(max-width: 600px) {
-      //   position: relative;
-      //   order: -2;
+      @media only screen and(max-width: 540px) {
+        top: 36%;
+      }
+
+      @media only screen and(max-width: 384px) {
+        top: 36%;
+      }
+
+      @media only screen and(max-width: 280px) {
+        top: 37%;
+      }
+
+      // @media only screen and(max-width: 280px) {
+      //   top: -10px;
       // }
 
       h3 {
@@ -96,12 +107,25 @@ body {
         //   line-height: 1.5;
         // }
 
-        @media only screen and(max-width: 414px) {
+        @media only screen and(max-width: 480px) {
           font-size: 18px;
         }
 
         @media only screen and(max-width: 394px) {
-          font-size: 15px;
+          top: 40%;
+          font-size: 14px;
+        }
+
+        @media only screen and(max-width: 384px) {
+          margin-bottom: 47px;
+        }
+
+        @media only screen and(max-width: 320px) {
+          font-size: 12px;
+        }
+
+        @media only screen and(max-width: 280px) {
+          font-size: 10px;
         }
       }
 
@@ -117,12 +141,20 @@ body {
         //   font-size: 24px;
         // }
 
-        @media only screen and(max-width: 414px) {
+        @media only screen and(max-width: 480px) {
           font-size: 18px;
         }
 
         @media only screen and(max-width: 394px) {
-          font-size: 15px;
+          font-size: 14px;
+        }
+
+        @media only screen and(max-width: 320px) {
+          font-size: 12px;
+        }
+
+        @media only screen and(max-width: 280px) {
+          font-size: 10px;
         }
       }
     }
@@ -136,15 +168,19 @@ body {
       //   width: auto;
       // }
 
-      @media only screen and(max-width: 414px) {
+      @media only screen and(max-width: 480px) {
         padding: 28px 1%;
+      }
+
+      @media only screen and(max-width: 384px) {
+        padding: 20px 1%;
       }
     }
     .activeBorder {
       border: 1px solid;
       border-radius: 40px;
 
-      @media only screen and(max-width: 414px) {
+      @media only screen and(max-width: 480px) {
         border-radius: 25px;
       }
 
@@ -152,7 +188,11 @@ body {
         height: 170px;
         margin-top: -10px;
 
-        @media only screen and(max-width: 414px) {
+        // @media only screen and(max-width: 480px) {
+        //   border-radius: 25px;
+        // }
+
+        @media only screen and(max-width: 540px) {
           height: auto;
           margin-top: 0;
         }
@@ -161,8 +201,12 @@ body {
         font-size: 26px;
         letter-spacing: 1px;
 
-        @media only screen and(max-width: 414px) {
+        @media only screen and(max-width: 480px) {
           font-size: 18px;
+        }
+
+        @media only screen and(max-width: 280px) {
+          font-size: 15px;
         }
       }
       .card-btn {
@@ -177,6 +221,11 @@ body {
         @media only screen and(max-width: 394px) {
           font-size: 12px;
         }
+
+        @media only screen and(max-width: 280px) {
+          font-size: 10px;
+          padding: 6px 8px;
+        }
       }
       // @media only screen and(max-width: 600px) {
       //   order: -1;
@@ -189,8 +238,25 @@ body {
       position: relative;
       text-align: center;
 
+      @media only screen and(max-width: 540px) {
+        padding: 20px 0;
+      }
+
+      @media only screen and(max-width: 394px) {
+        padding: 16px 0;
+      }
+
       h2 {
         font-size: 18px;
+        font-weight: 400;
+
+        @media only screen and(max-width: 394px) {
+          font-size: 12px;
+        }
+
+        @media only screen and(max-width: 394px) {
+          font-size: 10px;
+        }
       }
       .popular-tag {
         position: absolute;
@@ -202,9 +268,13 @@ body {
         border: 2px solid;
         border-radius: 4px;
 
-        // @media only screen and(max-width: 414px) {
-        //   top: -20px;
-        // }
+        @media only screen and(max-width: 540px) {
+          top: -17px;
+        }
+
+        @media only screen and(max-width: 384px) {
+          top: -10px;
+        }
 
         p {
           padding: 7px 2px;
@@ -213,10 +283,21 @@ body {
           font-weight: 600;
           width: 100%;
 
-          @media only screen and(max-width: 414px) {
+          @media only screen and(max-width: 480px) {
             font-size: 8px;
+            padding: 4px 2px;
+          }
+
+          @media only screen and(max-width: 394px) {
+            padding: 2px 2px;
+            font-size: 7px;
+          }
+
+          @media only screen and(max-width: 280px) {
+            font-size: 5px;
           }
         }
+
         p {
           background-color: $color-white;
         }
@@ -232,13 +313,21 @@ body {
           left: 28%;
           top: 20%;
           font-size: 19px;
+
+          @media only screen and(max-width: 384px) {
+            font-size: 14px;
+          }
         }
         h1 {
           font-size: 34px;
           font-weight: bold;
 
-          @media only screen and(max-width: 414px) {
+          @media only screen and(max-width: 480px) {
             font-size: 20px;
+          }
+
+          @media only screen and(max-width: 384px) {
+            font-size: 17px;
           }
         }
       }
@@ -247,6 +336,15 @@ body {
         margin: 0 auto;
         line-height: 14px;
         padding-top: 8px;
+
+        @media only screen and(max-width: 394px) {
+          font-size: 12px;
+        }
+
+        @media only screen and(max-width: 384px) {
+          font-size: 10px;
+          line-height: 10px;
+        }
       }
     }
 
@@ -257,15 +355,19 @@ body {
       //   margin: 30px 0;
       // }
 
-      @media only screen and(max-width: 414px) {
+      @media only screen and(max-width: 480px) {
         margin: 80px 0 38px;
+      }
+
+      @media only screen and(max-width: 384px) {
+        margin: 50px 0 38px;
       }
 
       img {
         width: 80px;
         height: 60px;
 
-        @media only screen and(max-width: 414px) {
+        @media only screen and(max-width: 480px) {
           width: 50px;
           height: 40px;
         }
@@ -277,12 +379,20 @@ body {
         opacity: 0.6;
         font-weight: 500;
 
-        @media only screen and(max-width: 414px) {
+        @media only screen and(max-width: 480px) {
           font-size: 13px;
         }
 
         @media only screen and(max-width: 390px) {
           font-size: 12px;
+        }
+
+        @media only screen and(max-width: 384px) {
+          font-size: 10px;
+        }
+
+        @media only screen and(max-width: 280px) {
+          font-size: 9px;
         }
       }
     }
@@ -302,6 +412,16 @@ body {
 
       @media only screen and(max-width: 394px) {
         font-size: 12px;
+        padding: 8px 16px;
+      }
+
+      @media only screen and(max-width: 384px) {
+        padding: 7px 12px;
+      }
+
+      @media only screen and(max-width: 280px) {
+        font-size: 10px;
+        padding: 6px 8px;
       }
     }
 
@@ -310,16 +430,17 @@ body {
       margin-top: 80px;
       font-weight: 600;
 
-      @media only screen and(max-width: 1360px) {
-        margin-top: 80px;
-      }
-
-      @media only screen and(max-width: 414px) {
+      @media only screen and(max-width: 480px) {
         font-size: 18px;
       }
-      // @media only screen and(max-width: 600px) {
-      //   margin-top: 30px;
-      // }
+
+      @media only screen and(max-width: 384px) {
+        margin-top: 50px;
+      }
+
+      @media only screen and(max-width: 280px) {
+        font-size: 15px;
+      }
     }
   }
 
@@ -329,12 +450,16 @@ body {
     text-align: center;
     margin-top: 25px;
     font-weight: 700;
-    // @media only screen and(max-width: 414px) {
+    // @media only screen and(max-width: 480px) {
     //   margin-top: 60px;
     //   font-size: 16px;
     // }
     @media only screen and(max-width: 1100px) {
       margin-top: 50px;
+    }
+
+    @media only screen and(max-width: 400px) {
+      margin-top: 20px;
     }
   }
 }
