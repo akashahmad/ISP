@@ -82,7 +82,7 @@ body {
       @media only screen and(max-width: 384px) {
         top: 36%;
       }
-      @media only screen and(max-width: 375px) {
+      @media only screen and(max-width: 375px) { 
         top: 36%;
       }
       @media only screen and(max-width: 320px) {
@@ -100,9 +100,25 @@ body {
         margin-bottom: 70px;
         text-align: center;
         letter-spacing: 2px;
-
+         
+        @media only screen and(max-width: 750px) {
+          font-size: 30px;
+          margin-bottom: 80px;
+        }
         @media only screen and(max-width: 650px) {
-          font-size: 24px;
+          font-size: 28px;
+          margin-bottom: 80px;
+        }
+        @media only screen and(max-width: 600px) {
+          font-size: 25px;
+          margin-bottom: 80px;
+        }
+        @media only screen and(max-width: 550px) {
+          font-size: 21px;
+          margin-bottom: 80px;
+        }
+        @media only screen and(max-width: 510px) {
+          font-size: 20px;
           margin-bottom: 80px;
         }
 
@@ -111,26 +127,31 @@ body {
           margin-bottom: 60px;
         }
 
-        @media only screen and(max-width: 395px) {
+        @media only screen and(max-width: 400px) {
           top: 40%;
-          font-size: 14px;
+          font-size: 16px;
           margin-bottom: 52px;
         }
 
         @media only screen and(max-width: 390px) {
           margin-bottom: 47px;
         }
-
-        @media only screen and(max-width: 320px) {
+        @media only screen and(max-width: 370px) {
+          font-size: 14px;
+        }
+        @media only screen and(max-width: 340px) {
           font-size: 12px;
         }
 
-        @media only screen and(max-width: 280px) {
+        @media only screen and(max-width: 290px) {
           font-size: 10px;
         }
-        @media only screen and(max-width: 250px) {
+        @media only screen and(max-width: 260px) {
           font-size: 8.5px;
           margin-bottom: 32px;
+        }
+        @media only screen and(max-width: 230px) {
+          font-size: 7px;
         }
       }
 
@@ -138,27 +159,50 @@ body {
         font-size: 32px;
         text-align: center;
         letter-spacing: 2px;
+        @media only screen and(max-width: 750px) {
+          font-size: 30px;
+          margin-bottom: 80px;
+        }
         @media only screen and(max-width: 650px) {
-          font-size: 24px;
+          font-size: 28px;
+          margin-bottom: 80px;
+        }
+        @media only screen and(max-width: 600px) {
+          font-size: 25px;
+          margin-bottom: 80px;
+        }
+        @media only screen and(max-width: 550px) {
+          font-size: 21px;
+          margin-bottom: 80px;
+        }
+        @media only screen and(max-width: 510px) {
+          font-size: 20px;
+         
         }
 
         @media only screen and(max-width: 480px) {
           font-size: 18px;
         }
 
-        @media only screen and(max-width: 394px) {
+        @media only screen and(max-width: 400px) {
+          font-size: 16px;
+        }
+        @media only screen and(max-width: 370px) {
           font-size: 14px;
         }
 
-        @media only screen and(max-width: 320px) {
+        @media only screen and(max-width: 340px) {
           font-size: 12px;
         }
 
-        @media only screen and(max-width: 280px) {
+        @media only screen and(max-width: 290px) {
           font-size: 10px;
         }
-        @media only screen and(max-width: 250px) {
+        @media only screen and(max-width: 260px) {
           font-size: 8.5px;
+        }
+        @media only screen and(max-width: 230px) {
+          font-size: 7px;
         }
       }
     }
@@ -430,13 +474,12 @@ body {
         font-family: rebuchet-Italic !important;
         opacity: 0.6;
         font-weight: 500;
-
-        @media only screen and(max-width: 480px) {
-          font-size: 13px;
+        
+        @media only screen and(max-width: 750px) {
+          font-size: 14px;
         }
-
-        @media only screen and(max-width: 390px) {
-          font-size: 12px;
+        @media only screen and(max-width: 550px) {
+          font-size: 14px;
         }
 
         @media only screen and(max-width: 384px) {
