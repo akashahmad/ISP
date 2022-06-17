@@ -280,18 +280,21 @@ body {
         }
       }
       .card-pic {
-        @media only screen and(max-width: 600px) {
-          mmargin: 50px 0 20.5px;
+        margin: 100px 0 38px;
+        @media only screen and(max-width: 480px) {
+          margin: 70px 0 38px;
+        }
+  
+        @media only screen and(max-width: 395px) {
+          margin: 50px 0 22px;
+        }
+        @media only screen and(max-width: 280px) {
+          margin: 35px 0px 25px;
         }
       }
       .card-btn {
         height: 36px;
-        margin-top: -4px;
-
-        @media only screen and(max-width: 600px) {
-          margin-top: auto;
-          height: auto;
-        }
+        margin-top: -3px;
 
         @media only screen and(max-width: 394px) {
           font-size: 12px;
