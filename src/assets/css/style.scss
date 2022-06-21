@@ -39,19 +39,14 @@ body {
     margin: 0 auto;
     position: relative;
 
-    @media only screen and(max-width: 480px) {
-      padding: 25px 2%;
+    @media only screen and(max-width: 567px) {
+      padding: 25px 1%;
     }
   }
   .card-container {
     @include displayCenter(space-between);
     text-align: center;
-    align-items: flex-start;
     position: relative;
-
-    @media only screen and(max-width: 1100px) {
-      row-gap: 50px;
-    }
 
     .main-highlight {
       position: absolute;
@@ -62,153 +57,51 @@ body {
       z-index: 99;
       color: #4d4d4d;
       opacity: 0.9;
+      font-size: 28px;
+      text-align: center;
+      letter-spacing: 2px;
+
+      @media only screen and(max-width: 684px) {
+        font-size: 23.3px;
+        top: 37%;
+      }
 
       @media only screen and(max-width: 600px) {
-        top: 37%;
-      }
-
-      @media only screen and(max-width: 540px) {
-        top: 36%;
-      }
-      @media only screen and(max-width: 480px) {
-        top: 39%;
-      }
-      @media only screen and(max-width: 412px) {
+        font-size: 19px;
         top: 35%;
       }
-      @media only screen and(max-width: 393px) {
-        top: 37%;
+
+      @media only screen and(max-width: 479px) {
+        font-size: 13px;
+        top: 36.8%;
       }
-      @media only screen and(max-width: 386px) {
-        top: 36%;
-      }
-      @media only screen and(max-width: 320px) {
-        top: 37%;
-      }
-      @media only screen and(max-width: 290px) {
-        top: 39%;
-      }
-      @media only screen and(max-width: 280px) {
-        top: 37%;
-      }
-      @media only screen and(max-width: 260px) {
-        top: 39%;
-      }
-      @media only screen and(max-width: 240px) {
+
+      @media only screen and(max-width: 354px) {
+        font-size: 10px;
         top: 38%;
       }
 
       h3 {
-        font-size: 32px;
-        margin-bottom: 70px;
-        text-align: center;
-        letter-spacing: 2px;
+        margin-bottom: 12.5%;
 
-        @media only screen and(max-width: 750px) {
-          font-size: 30px;
-          margin-bottom: 80px;
-        }
-        @media only screen and(max-width: 650px) {
-          font-size: 28px;
-          margin-bottom: 80px;
-        }
-        @media only screen and(max-width: 600px) {
-          font-size: 25px;
-          margin-bottom: 80px;
-        }
-        @media only screen and(max-width: 550px) {
-          font-size: 21px;
-          margin-bottom: 80px;
-        }
-        @media only screen and(max-width: 510px) {
-          font-size: 20px;
-          margin-bottom: 80px;
+        @media only screen and(max-width: 684px) {
+          margin-bottom: 15%;
         }
 
-        @media only screen and(max-width: 480px) {
-          font-size: 18px;
-          margin-bottom: 60px;
+        @media only screen and(max-width: 567px) {
+          margin-bottom: 18%;
         }
 
-        @media only screen and(max-width: 400px) {
-          top: 40%;
-          font-size: 16px;
-          margin-bottom: 52px;
+        @media only screen and(max-width: 479px) {
+          margin-bottom: 18%;
         }
 
-        @media only screen and(max-width: 390px) {
+        @media only screen and(max-width: 360px) {
+          margin-bottom: 20%;
+        }
+
+        @media only screen and(max-width: 320px) {
           margin-bottom: 47px;
-        }
-        @media only screen and(max-width: 370px) {
-          font-size: 14px;
-        }
-        @media only screen and(max-width: 340px) {
-          font-size: 12px;
-        }
-
-        @media only screen and(max-width: 290px) {
-          font-size: 10px;
-        }
-        @media only screen and(max-width: 280px) {
-          margin-bottom: 36px;
-        }
-
-        @media only screen and(max-width: 260px) {
-          font-size: 8.5px;
-          margin-bottom: 32px;
-        }
-        @media only screen and(max-width: 230px) {
-          font-size: 7px;
-        }
-      }
-
-      h4 {
-        font-size: 32px;
-        text-align: center;
-        letter-spacing: 2px;
-        @media only screen and(max-width: 750px) {
-          font-size: 30px;
-          margin-bottom: 80px;
-        }
-        @media only screen and(max-width: 650px) {
-          font-size: 28px;
-          margin-bottom: 80px;
-        }
-        @media only screen and(max-width: 600px) {
-          font-size: 25px;
-          margin-bottom: 80px;
-        }
-        @media only screen and(max-width: 550px) {
-          font-size: 21px;
-          margin-bottom: 80px;
-        }
-        @media only screen and(max-width: 510px) {
-          font-size: 20px;
-        }
-
-        @media only screen and(max-width: 480px) {
-          font-size: 18px;
-        }
-
-        @media only screen and(max-width: 400px) {
-          font-size: 16px;
-        }
-        @media only screen and(max-width: 370px) {
-          font-size: 14px;
-        }
-
-        @media only screen and(max-width: 340px) {
-          font-size: 12px;
-        }
-
-        @media only screen and(max-width: 290px) {
-          font-size: 10px;
-        }
-        @media only screen and(max-width: 260px) {
-          font-size: 8.5px;
-        }
-        @media only screen and(max-width: 230px) {
-          font-size: 7px;
         }
       }
     }
@@ -218,99 +111,84 @@ body {
       transition: 0.1s linear;
       width: 32%;
 
-      @media only screen and(max-width: 480px) {
+      @media only screen and(max-width: 567px) {
+        width: 33%;
+        padding: 30px 1.5%;
+      }
+
+      @media only screen and(max-width: 479px) {
         padding: 23px 1% 12px 1%;
-      }
-      @media only screen and(max-width: 395px) {
-        padding: 16px 1% 7px 1%;
-      }
-      @media only screen and(max-width: 240px) {
-        padding: 15px 1% 7px 1%;
       }
     }
     .activeBorder {
       border: 1px solid;
       border-radius: 40px;
 
-      @media only screen and(max-width: 480px) {
+      @media only screen and(max-width: 479px) {
         border-radius: 25px;
       }
-      @media only screen and(max-width: 480px) {
-        border-radius: 15px;
+      @media only screen and(max-width: 350px) {
+        border-radius: 18px;
       }
 
       .card-inner {
-        height: 170px;
+        // height: 170px;
         margin-top: -10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
 
-        @media only screen and(max-width: 540px) {
-          height: auto;
+        @media only screen and(max-width: 684px) {
           margin-top: 0;
         }
+
+        @media only screen and(max-width: 567px) {
+          height: 140px;
+          padding: auto;
+        }
+
+        @media only screen and(max-width: 479px) {
+          height: 110px;
+        }
+
+        @media only screen and(max-width: 350px) {
+          height: 90px;
+        }
+
         h2 {
           margin-top: 8px;
-          @media only screen and(max-width: 800px) {
-            margin-top: 8px;
-          }
-          @media only screen and(max-width: 540px) {
-            margin-top: 0px;
-            font-size: 14px;
-          }
-          @media only screen and(max-width: 380px) {
-            font-size: 12px;
-          }
-          @media only screen and(max-width: 280px) {
-            font-size: 10px;
-          }
         }
       }
       .mb-section {
         font-size: 26px;
         letter-spacing: 1px;
 
-        @media only screen and(max-width: 480px) {
-          font-size: 18px;
+        @media only screen and(max-width: 479px) {
+          font-size: 20px;
         }
 
-        @media only screen and(max-width: 280px) {
-          font-size: 15px;
-        }
-        @media only screen and(max-width: 250px) {
-          font-size: 12px;
+        @media only screen and(max-width: 350px) {
+          font-size: 16px;
         }
       }
       .card-pic {
         margin: 100px 0 38px;
-        @media only screen and(max-width: 480px) {
-          margin: 70px 0 37px;
+
+        @media only screen and(max-width: 479px) {
+          margin: 70px 0 24px;
         }
-  
-        @media only screen and(max-width: 395px) {
-          margin: 50px 0 21px;
-        }
-        @media only screen and(max-width: 280px) {
-          margin: 35px 0px 25px;
+
+        @media only screen and(max-width: 350px) {
+          margin: 50px 0 16px;
         }
       }
       .card-btn {
         height: 36px;
         margin-top: -3px;
- 
-        @media only screen and(max-width: 414px) {
-          margin-top: auto;
-          height: auto;
-        }
-        @media only screen and(max-width: 394px) {
-          font-size: 12px;
-         
-        }
 
-        @media only screen and(max-width: 280px) {
-          font-size: 10px;
-          padding: 6px 8px;
-        }
-        @media only screen and(max-width: 250px) {
-          padding: 4px 7px;
+        @media only screen and(max-width: 479px) {
+          height: auto;
+          margin-top: auto;
         }
       }
     }
@@ -320,29 +198,28 @@ body {
       border-radius: 1rem;
       position: relative;
       text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
 
-      @media only screen and(max-width: 540px) {
-        padding: 20px 0;
+      @media only screen and(max-width: 600px) {
+        height: 140px;
+        padding: auto;
       }
 
-      @media only screen and(max-width: 412px) {
-        padding: 10px 0;
+      @media only screen and(max-width: 479px) {
+        height: 110px;
       }
-      @media only screen and(max-width: 280px) {
-        padding: 8px 0;
+
+      @media only screen and(max-width: 350px) {
+        height: 90px;
       }
 
       h2 {
         font-size: 18px;
         font-weight: 400;
 
-        @media only screen and(max-width: 540px) {
-          font-size: 14px;
-        }
-        @media only screen and(max-width: 380px) {
-          font-size: 12px;
-        }
-        @media only screen and(max-width: 280px) {
+        @media only screen and(max-width: 479px) {
           font-size: 10px;
         }
       }
@@ -356,14 +233,6 @@ body {
         border: 2px solid;
         border-radius: 4px;
 
-        @media only screen and(max-width: 600px) {
-          top: -12px;
-        }
-
-        @media only screen and(max-width: 393px) {
-          top: -10px;
-        }
-
         p {
           padding: 7px 2px;
           text-transform: uppercase;
@@ -371,18 +240,9 @@ body {
           font-weight: 600;
           width: 100%;
 
-          @media only screen and(max-width: 600px) {
-            font-size: 8px;
-            padding: 4px 2px;
-          }
-
-          @media only screen and(max-width: 394px) {
-            padding: 2px 2px;
+          @media only screen and(max-width: 479px) {
             font-size: 7px;
-          }
-
-          @media only screen and(max-width: 280px) {
-            font-size: 5px;
+            padding: 3px 1px;
           }
         }
 
@@ -396,41 +256,30 @@ body {
         position: relative;
         padding-top: 8px;
 
-        @media only screen and(max-width: 250px) {
-          padding-top: 2px;
-        }
         span {
           position: absolute;
           left: 28%;
           top: 20%;
           font-size: 19px;
-          @media only screen and(max-width: 580px) {
-            font-size: 16px;
-            left: 26%;
-            top: 21%;
+
+          @media only screen and(max-width: 479px) {
+            font-size: 12px;
           }
 
-          @media only screen and(max-width: 384px) {
-            font-size: 12px;
-            left: 26%;
-            top: 33%;
-          }
-          @media only screen and(max-width: 250px) {
-            left: 21%;
-            top: 16%;
-            font-size: 10px;
+          @media only screen and(max-width: 350px) {
+            font-size: 9px;
           }
         }
         h1 {
           font-size: 34px;
           font-weight: bold;
 
-          @media only screen and(max-width: 480px) {
-            font-size: 20px;
+          @media only screen and(max-width: 479px) {
+            font-size: 24px;
           }
 
-          @media only screen and(max-width: 384px) {
-            font-size: 17px;
+          @media only screen and(max-width: 350px) {
+            font-size: 18px;
           }
         }
       }
@@ -440,50 +289,40 @@ body {
         line-height: 14px;
         padding-top: 8px;
 
-        @media only screen and(max-width: 540px) {
+        @media only screen and(max-width: 479px) {
           font-size: 12px;
         }
 
-        @media only screen and(max-width: 384px) {
-          font-size: 10px;
+        @media only screen and(max-width: 350px) {
+          font-size: 9px;
           line-height: 10px;
-        }
-        @media only screen and(max-width: 280px) {
-          font-size: 7px;
-          line-height: 8px;
-          padding: 8px 2px 0px 2px;
         }
       }
     }
 
     .card-pic {
       margin: 100px 0 38px;
-      @media only screen and(max-width: 480px) {
-        margin: 70px 0 38px;
+
+      @media only screen and(max-width: 479px) {
+        margin: 70px 0 24px;
       }
 
-      @media only screen and(max-width: 395px) {
-        margin: 50px 0 22px;
-      }
-      @media only screen and(max-width: 280px) {
-        margin: 35px 0px 25px;
+      @media only screen and(max-width: 350px) {
+        margin: 50px 0 16px;
       }
 
       img {
         width: 80px;
         height: 60px;
 
-        @media only screen and(max-width: 480px) {
-          width: 50px;
-          height: 40px;
+        @media only screen and(max-width: 479px) {
+          width: 60%;
+          height: 50px;
         }
-        @media only screen and(max-width: 278px) {
-          width: 40px;
-          height: 30px;
-        }
-        @media only screen and(max-width: 210px) {
-          width: 35px;
-          height: 25px;
+
+        @media only screen and(max-width: 350px) {
+          width: 50%;
+          height: 35px;
         }
       }
 
@@ -493,28 +332,12 @@ body {
         opacity: 0.6;
         font-weight: 500;
 
-        @media only screen and(max-width: 750px) {
-          font-size: 14px;
-        }
-        @media only screen and(max-width: 410px) {
+        @media only screen and(max-width: 479px) {
           font-size: 12px;
         }
 
-        @media only screen and(max-width: 384px) {
-          font-size: 10px;
-        }
-        @media only screen and(max-width: 294px) {
+        @media only screen and(max-width: 350px) {
           font-size: 9px;
-        }
-        @media only screen and(max-width: 270px) {
-          font-size: 8px;
-          margin-top: 5px;
-        }
-        @media only screen and(max-width: 235px) {
-          font-size: 7px;
-        }
-        @media only screen and(max-width: 208px) {
-          font-size: 6px;
         }
       }
     }
@@ -527,30 +350,14 @@ body {
       font-weight: bold;
       font-size: 15px;
       cursor: pointer;
-      @media only screen and(max-width: 414px) {
-        padding: 6px 12px;
-      }
-      &:hover {
-        box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.3);
-      }
 
-      @media only screen and(max-width: 414px) {
+      @media only screen and(max-width: 479px) {
         font-size: 12px;
-        padding: 8px 16px;
+        padding: 7px 16px;
       }
-
-      @media only screen and(max-width: 384px) {
-        padding: 7px 12px;
-      }
-      @media only screen and(max-width: 320px) {
-        padding: 4px 12px;
-      }
-      @media only screen and(max-width: 280px) {
-        font-size: 10px;
-        padding: 6px 8px;
-      }
-      @media only screen and(max-width: 250px) {
-        padding: 4px 7px;
+      @media only screen and(max-width: 350px) {
+        font-size: 9px;
+        padding: 5px 12px;
       }
     }
 
@@ -559,22 +366,14 @@ body {
       margin-top: 80px;
       font-weight: 600;
 
-      @media only screen and(max-width: 480px) {
-        font-size: 18px;
-        margin-top: 70px;
+      @media only screen and(max-width: 479px) {
+        font-size: 20px;
+        margin-top: 60px;
       }
 
-      @media only screen and(max-width: 395px) {
-        margin-top: 50px;
-      }
-
-      @media only screen and(max-width: 280px) {
-        font-size: 15px;
-        margin-top: 35px;
-      }
-      @media only screen and(max-width: 250px) {
-        font-size: 12px;
-        margin-top: 35px;
+      @media only screen and(max-width: 350px) {
+        font-size: 16px;
+        margin-top: 40px;
       }
     }
   }
@@ -585,15 +384,5 @@ body {
     text-align: center;
     margin-top: 25px;
     font-weight: 700;
-    @media only screen and(max-width: 1100px) {
-      margin-top: 50px;
-    }
-
-    @media only screen and(max-width: 414px) {
-      margin-top: 20px;
-    }
-    @media only screen and(max-width: 250px) {
-      font-size: 10px;
-    }
   }
 }
