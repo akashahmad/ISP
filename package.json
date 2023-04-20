@@ -18,7 +18,7 @@
     "gatsby": "^4.16.0",
     "gatsby-plugin-image": "^2.16.1",
     "gatsby-plugin-sass": "^5.16.0",
-    "gatsby-plugin-sharp": "^4.16.1",
+    "gatsby-plugin-sharp": "^4.25.1",
     "gatsby-source-filesystem": "^4.16.0",
     "gatsby-transformer-sharp": "^4.16.0",
     "react": "^18.1.0",
